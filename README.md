@@ -19,3 +19,11 @@ should return
 `Whisper Hello World!`
 
 To process a file, use `curl -F "file=@/path/to/file" http://localhost:5000/whisper`
+
+# Errors
+
+`fatal error: Python.h: No such file or directory` when installing pyaudio
+
+https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory
+
+https://leimao.github.io/blog/Docker-Container-Audio/

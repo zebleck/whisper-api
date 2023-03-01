@@ -1,0 +1,14 @@
+version: '3'
+services:
+  api:
+    build:
+      context: api
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+  record:
+    build:
+      context: record
+      dockerfile: Dockerfile
+    volumes:
+      - ./record/transcript.txt:/python-docker/transcript.txt
