@@ -2,13 +2,21 @@ This repository is meant as a easy-to-use docker container for setting up an API
 
 Original from [here](https://lablab.ai/t/whisper-api-flask-docker).
 
-# How to run the container?
+# How to run?
 
-1. Open a terminal and navigate to the folder where you created the files.
-2. Run the following command to build the container:<br>`docker build -t whisper-api .`
-3. Run the following command to run the container:<br>`docker run -p 5000:5000 whisper-api`
+Run `docker-compose up` to start the container.
 
-# Test
+# Whisper API
+
+An API for Whisper runs at `http://localhost:5000/whisper`.
+
+To process a file yourself, use `curl -F "file=@/path/to/file" http://localhost:5000/whisper`
+
+# Record
+
+The record service will record continuously and write the transcript to the file `transcript.txt` located in the `record` folder.
+
+# Testing
 
 Running
 
@@ -17,13 +25,3 @@ Running
 should return
 
 `Whisper Hello World!`
-
-To process a file, use `curl -F "file=@/path/to/file" http://localhost:5000/whisper`
-
-# Errors
-
-`fatal error: Python.h: No such file or directory` when installing pyaudio
-
-https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory
-
-https://leimao.github.io/blog/Docker-Container-Audio/
