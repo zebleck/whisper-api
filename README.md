@@ -25,3 +25,7 @@ Running
 should return
 
 `Whisper Hello World!`
+
+# Adding devices (audio, GPU)
+
+https://docs.docker.com/config/containers/resource_constraints/
