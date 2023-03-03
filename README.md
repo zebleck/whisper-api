@@ -29,3 +29,5 @@ should return
 # Adding devices (audio, GPU)
 
 https://docs.docker.com/config/containers/resource_constraints/
+
+https://docs.nvidia.com/deeplearning/riva/user-guide/docs/quick-start-guide.html
